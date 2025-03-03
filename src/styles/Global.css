@@ -1,0 +1,104 @@
+:root {
+    --theme-color: #ef534f;
+    --font-color: #333;
+    --background-color: #f9f9f9;
+    --border-color: #ccced1;
+    --action-color: #53a336;
+    --focus-color: #6cb5f9;
+    --text-color: #333;
+    --error-color: #db3700;
+    --success-color: #76af50;
+    --link-color: #2977ff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-active-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 10px;
+    --font-family: 'Poppins', sans-serif;
+    --font-size-base: 14px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--action-color);
+}
+
+.navbar {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--theme-color);
+}
+
+.btn {
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--theme-color-hover);
+}
+
+.service-btn {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.service-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px var(--shadow-active-color);
+}
+
+footer {
+    background-color: var(--background-color);
+    color: #5d5d5d;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+footer a {
+    color: var(--theme-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--action-color);
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
