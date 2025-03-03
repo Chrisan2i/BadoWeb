@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./views/Home";
 import Login from "./views/Login";
+import Register from "./views/Register";  // <-- Importa Register
 
 const Layout = () => {
     return (
@@ -24,6 +25,7 @@ const Layout = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />  {/* <-- Ruta para Registro */}
             </Routes>
         </div>
     );
